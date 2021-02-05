@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Conways Game of Life</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Conways Game of Life</h1>
+      <p><strong>Instructions:</strong> Please select a board width and height of up to 300 x 300 and input how many generations you would like to view.</p>
+    </div>
+    <div class="control-container">
+      <div class="control">
+        <label for="boardWidth">Board Width:</label><br />
+        <input id="boardWidth" type="number" value="20" onfocus="this.select()" max="300" min="1" />
+      </div>
+      <div class="control">
+        <label for="boardHeight">Board Height:</label><br />
+        <input id="boardHeight" type="number" value="20" onfocus="this.select()" max="300" min="1" />
+      </div>
+      <div class="control">
+        <label for="generationsToView">Number of Generations:</label><br />
+        <input id="generationsToView" type="number" value="20" onfocus="this.select()" />
+      </div>
+      <div class="control">
+        <button id="beginWorldBTN" class="startButton">Create Life</button>
+      </div>
+    </div>
+    <div class="generationCounter hidden">
+      <p><span>Generation Count: </span><span id="generation"></span></p>
+    </div>
+    <div class="message"></div>
+    <canvas id="ourWorld"> </canvas>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>
