@@ -41,8 +41,7 @@ class ConwaysGameOfLife {
     this.canvas.width = Number(document.querySelector("#boardWidth").value) * this.res;
     this.canvas.height = Number(document.querySelector("#boardHeight").value) * this.res;
     this.generationToView = Number(document.querySelector("#generationsToView").value);
-    console.log(this.canvas.width);
-    console.log(this.canvas.height);
+
     if (this.canvas.width > 0 && this.canvas.height > 0 && this.generationToView > 0 && this.canvas.width <= 3000 && this.canvas.height <= 3000) {
       this.canvas.classList.remove("hidden");
       this.cols = this.canvas.width / this.res;
